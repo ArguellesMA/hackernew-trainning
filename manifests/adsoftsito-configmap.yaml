@@ -11,4 +11,4 @@ data:
   DEV_USER: admin
   DEV_PASSWORD: test
   DEV_HOST: marco
-  DEV_PORT: "5434"
+  DEV_PORT: "5432"
