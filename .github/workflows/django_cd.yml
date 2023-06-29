@@ -57,7 +57,7 @@ jobs:
     - name: Deploy
       uses: okteto/pipeline@2.7.0
       with:
-         name: hackernews-trainning
+         name: hackernews-trainning-marco
          timeout: 10m
          #variables: "DEV_USER=${{ secrets.DEV_USER }}"
 
