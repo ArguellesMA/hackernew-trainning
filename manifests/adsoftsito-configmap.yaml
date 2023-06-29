@@ -10,5 +10,5 @@ data:
   DEV_DATABASE: db
   DEV_USER: admin
   DEV_PASSWORD: test
-  DEV_HOST: marco
+  DEV_HOST: marco-postgres
   DEV_PORT: "5432"
