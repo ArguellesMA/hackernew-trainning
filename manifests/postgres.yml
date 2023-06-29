@@ -6,7 +6,7 @@ metadata:
    app: marco
 spec:
  ports:
- - port: 5432
+ - port: 5434
    name: db
  type: ClusterIP  
  selector:
