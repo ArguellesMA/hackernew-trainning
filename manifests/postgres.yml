@@ -1,35 +1,35 @@
 apiVersion: v1
 kind: Service
 metadata:
- name: marco
+ name: marco-postgres
  labels:
-   app: marco
+   app: marco-postgres
 spec:
  ports:
  - port: 5432
    name: db
  type: ClusterIP  
  selector:
-   app: marco
+   app: marco-postgres
 ---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
- name: marco
+ name: marco-postgres
 spec:
  selector:
    matchLabels:
-     app: marco
+     app: marco-postgres
  replicas: 1
- serviceName: marco
+ serviceName: marco-postgres
  template:
    metadata:
      labels:
-       app: marco
+       app: marco-postgres
    spec:
      terminationGracePeriodSeconds: 10
      containers:
-     - name: marco
+     - name: marco-postgres
        image: postgres:14
        imagePullPolicy: "IfNotPresent"
        ports:
