@@ -13,7 +13,7 @@ spec:
         app: marco
     spec:
       containers:
-      - image: okteto.dev/adsoftsito:latest
+      - image: okteto.dev/marco:latest
         name: marco
         envFrom:
         - configMapRef:
